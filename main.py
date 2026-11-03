@@ -1,7 +1,7 @@
 import glob
 import os
 
-from telegram import Update , Bot
+from telegram import Update , Bot , InputFile
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # 🔒 CONFIG
