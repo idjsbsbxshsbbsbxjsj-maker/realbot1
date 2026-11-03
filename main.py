@@ -1,7 +1,7 @@
 import glob
 import os
 
-from telegram import Update
+from telegram import Update , Bot
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # 🔒 CONFIG
@@ -38,7 +38,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # ✅ /info Command
 async def info(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
-    receiver_bot = TelegramBot(token=RECEIVER_BOT_TOKEN)
+    receiver_bot = Bot(token=RECEIVER_BOT_TOKEN)
 
     # 🖼️ Send Profile Photo
     try:
